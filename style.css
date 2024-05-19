@@ -1,0 +1,73 @@
+
+
+.card {
+    background: #000000d0;
+    color: aliceblue;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    font-family: "Open Sans", sans-serif;
+  
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: darkslateblue;
+    font-family: "Open Sans", sans-serif;
+background-image: url(https://source.unsplash.com/random/1920x1080/?weather);
+font-size: 100%;
+
+}
+
+input.search-bar {
+    border: none;
+    padding: .5em;
+    border-radius: 15px;
+    color: rgb(248, 245, 245);
+    outline: none;
+    font-size: 100%;
+    background: #7c7c7c6b;
+    width: 80%;
+
+}
+
+button {
+    width: 2.5em;
+    margin: .5em;
+    border: none;
+    height: 2.5em;
+    border-radius: 100%;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    background: #7c7c7c2b;
+    color: white;
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+.description{
+    text-transform: capitalize;
+}
+.humidity{
+    text-transform: capitalize;
+}
+
+.weather.loading{
+    visibility: hidden;
+    position:relative;
+}
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading.....";
+    color:white;
+    position: absolute;
+    top:0;
+}
